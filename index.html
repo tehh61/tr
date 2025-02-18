@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TradingView Clone</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="toolbar">
+      <div class="timeframes">
+        <button id="timeframe-1m">1m</button>
+        <button id="timeframe-2m">2m</button>
+        <button id="timeframe-5m">5m</button>
+        <button id="timeframe-15m">15m</button>
+        <button id="timeframe-1h">1h</button>
+        <button id="timeframe-4h">4h</button>
+        <button id="timeframe-1d">1D</button>
+        <button id="timeframe-1w">1W</button>
+        <button id="timeframe-1M">1M</button>
+      </div>
+      <div class="tools">
+        <button id="price-measure">Measure</button>
+        <button id="long-position">Long</button>
+        <button id="short-position">Short</button>
+      </div>
+      <div class="replay">
+        <input type="date" id="replay-date">
+        <input type="range" id="replay-speed" min="1" max="10" value="5">
+        <button id="replay-play">Play</button>
+        <button id="replay-stop">Stop</button>
+      </div>
+      <div class="data-import">
+        <input type="file" id="csv-file" accept=".csv">
+      </div>
+    </div>
+    <div id="chart-container"></div>
+  </div>
+  <script type="module" src="main.js"></script>
+</body>
+</html>
