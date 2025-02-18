@@ -34,9 +34,32 @@
       <div class="data-import">
         <input type="file" id="csv-file" accept=".csv">
       </div>
+      <div class="chart-type-selector">
+        <select id="chart-type">
+          <option value="Candlestick">Bougies</option>
+          <option value="Bar">Barres</option>
+          <option value="VolumeCandlestick">Bougies de volume</option>
+          <option value="Range">Plage</option>
+          <option value="HeikinAshi">Heikin-Ashi</option>
+          <option value="Renko">Renko</option>
+          <option value="LineBreak">Saut de ligne (Line Break)</option>
+          <option value="PointAndFigure">Point et Figure</option>
+          <option value="Kagi">Kagi</option>
+          <option value="Area">Région (Area)</option>
+          <option value="AreaHLC">Zone HLC</option>
+          <option value="Baseline">Ligne de base (Baseline)</option>
+          <option value="Line">Droite (Line)</option>
+          <option value="StepLine">Ligne en escalier (Step Line)</option>
+          <option value="LineWithMarkers">Ligne avec marqueurs (Line with Markers)</option>
+          <option value="HighLow">Haut-Bas</option>
+          <option value="Columns">Colonnes</option>
+          <option value="HollowCandles">Bougies creuses</option>
+        </select>
+      </div>
     </div>
     <div id="chart-container"></div>
   </div>
   <script type="module" src="main.js"></script>
 </body>
 </html>
+
